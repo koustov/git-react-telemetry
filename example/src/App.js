@@ -34,7 +34,7 @@ const App = () => {
 <div><input type="text" id="repo" name="password" value={repo} onChange={(e) => setRepo(e.target.value)} placeholder="repo name" required /></div>
 </div>
 <div className="form-cell">
-<div><label for="repo">Access Token</label></div>
+<div><label for="repo">Access Token<br/><a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token" target="_blank"><small>(what's this)</small></a></label></div>
 <div><input type="password" id="repo" name="password" value={repo} onChange={(e) => setPersonalAccessToken(e.target.value)} placeholder="personal access token" required /></div>
 </div>
 <div className="form-cell">
@@ -48,6 +48,7 @@ const App = () => {
     <div className='stat-row'>
       <div>
       <h1>Change statistics</h1>
+      
       </div>
       <div><GitStat  user={data.user}
               repo={data.repo}
