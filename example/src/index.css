@@ -121,3 +121,10 @@ input[type="submit"]:active {
   color: #000;
   font-weight: 500;
 }
+
+.logo {
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin-right: 1rem;
+}

@@ -11,9 +11,9 @@ export default function LineCard({type, title, subtitle, user, repo, formatter, 
       //  const d = node ? res[node] : res 
       //  const d_u = formatter(d)
         setData(res)
-        console.log('111111')
+        // console.log('111111')
         // console.log(d_u)
-        console.log(series_key_1)
+        // console.log(series_key_1)
         setLoading(false)
     })
 }, [user, repo])

@@ -38,8 +38,8 @@ const weekly_commit_data_formatter = (data) => {
 
 const yearly_activity_data_formatter = (data) => {
     const res = [];
-    console.error('XXXX')
-    console.error(data)
+    // console.error('XXXX')
+    // console.error(data)
     if(data && Array.isArray(data)){
         data.forEach(r => 
             res.push({

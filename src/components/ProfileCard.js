@@ -8,9 +8,9 @@ export default function ProfileCard({type, title, subtitle, config, formatter, n
   const [data, setData] = useState([]);
   useEffect(() => {
     request(type, config, node, formatter).then(res => {
-        console.log(res)
+        // console.log(res)
         setData(res && Array.isArray(res) ? res : [])
-        console.log('111111')
+        // console.log('111111')
         setLoading(false)
     })
 }, [config])
