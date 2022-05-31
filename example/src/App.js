@@ -54,9 +54,7 @@ const App = () => {
   const [user, setUser] = useState('atapas')
   const [repo, setRepo] = useState('react-play')
   const [types, setTypes] = useState(KEY_GROUP)
-  const [personalAccessToken, setPersonalAccessToken] = useState(
-    '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'
-  )
+  const [personalAccessToken, setPersonalAccessToken] = useState('')
   const [data, setData] = useState({
     user: user,
     repo: repo
