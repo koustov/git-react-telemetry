@@ -1,21 +1,17 @@
 import React, { useEffect, useState } from 'react';
-import { request } from "../stat-service"
+// import { request } from "../stat-service"
 import './Card.css';
-import LineCard from './LineCard';
 
 
-export default function StatisticsCard({type, title, subtitle, config}) {
+export default function StatisticsCard({type, title, subtitle, api}) {
   const [loading, setLoading] = useState(true);
   const [data, setData] = useState(0);
   useEffect(() => {
-    request(type, config).then(res => {
+    api(type).then(res => {
         setData(res && Array.isArray(res) ? res.length : 0)
-        // setData(res.length)
-        // console.log('zzz')
-        // console.log(res)
         setLoading(false)
     })
-}, [config])
+}, [])
   
     return(
       <div className="card card-stat" >

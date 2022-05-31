@@ -1,6 +1,6 @@
 {
   "name": "react-git-telemetry",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple way to render public repo telemetry through react component",
   "author": "koustov",
   "license": "MIT",
@@ -51,8 +51,13 @@
   "files": [
     "dist"
   ],
+  "browser": {
+    "buffer": false
+  },
   "dependencies": {
-    "git-repo-api": "^0.0.5",
+    "assert": "^2.0.0",
+    "buffer": "^6.0.3",
+    "git-repo-api": "^0.0.17",
     "recharts": "^2.1.9"
   }
 }
